@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damon | Innovation & Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS - Hero Section Specific Styles */
+        .hero {
+            background: linear-gradient(135deg, #f90101 0%, #f9f901 100%);
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><path fill="%23d5001c" opacity="0.05" d="M0,400 Q300,200 600,400 T1200,400 L1200,800 L0,800 Z"/></svg>') no-repeat center;
+            background-size: cover;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            padding: 40px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 4.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Damon MO</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Portfolio ▾</a>
+                    <div class="dropdown-content">
+                        <a href="work.html">My Work</a>
+                        <a href="gallery.html">My Life</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Innovate. Educate. Inspire.</h1>
+            <p style="font-size: 1.5em; margin-bottom: 30px; font-weight: 300;"><!-- Inline CSS -->
+                Inspire and empowering the next generation to explore and Innovate
+            </p>
+            <a href="work.html" class="cta-button">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Student. Entrepreneur. Teacher.</h3>
+                    <p>I'm Damon, a Year 3 student at <strong>Lingnan University</strong>, passionate about leveraging technology to create meaningful change. My journey spans entrepreneurship, artificial intelligence, and education.</p>
+                    <p>As a STEAM teacher, I believe in nurturing curiosity and active learning. I challenge my students to explore, question, and discover the world through hands-on experiences.</p>
+                    <p>After working for years in the STEAM educating industry, I hate that the most of them are <strong> Scam Like </strong> company offering very low quality product and fail to inspire student to become an active learner </p>
+                    <p>So I decide to start my own company with my Friend in last year ---- <strong> A.T.Matrix studio </strong>. </p>
+                    <p>Beyond academics, I embrace discipline through regular gym training while maintaining an open mind to explore the world through travel. This balance of structure and spontaneity shapes my approach to life and problem-solving.</p>
+                </div>
+                <div class="about-media">
+                    <!-- Embedded Media Requirement -->
+                    <img src="media/atm logo.jpg" alt="Technology and Innovation" class="feature-image">
+                    <p class="caption">my company logo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="section dark-section">
+        <div class="container">
+            <h2>What Drives Me</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="icon">🤖</div>
+                    <h3>AI Innovation</h3>
+                    <p>Exploring artificial intelligence to solve real-world problems and create scalable solutions</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon">🚀</div>
+                    <h3>Entrepreneurship</h3>
+                    <p>Building ventures that make a difference and tackle challenges with creative approaches</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon">🎓</div>
+                    <h3>Education</h3>
+                    <p>Inspiring students to become curious, active learners who shape the future</p>
+                </div>
+                <div class="value-card">
+                    <div class="icon">💪</div>
+                    <h3>Discipline & Growth</h3>
+                    <p>Committed to fitness, travel, learning, and maintaining balance in life</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Highlights -->
+    <section class="section">
+        <div class="container">
+            <h2>Life Beyond Work</h2>
+            <div class="lifestyle-grid">
+                <div class="lifestyle-card">
+                    <img src="media/go to gym.png" alt="Gym Training">
+                    <div class="lifestyle-content">
+                        <h3>💪 Fitness Journey</h3>
+                        <p>Regular gym training teaches me discipline, resilience, and the power of consistent effort—principles I apply to every aspect of life.</p>
+                    </div>
+                </div>
+                <div class="lifestyle-card">
+                    <img src="media/fuji3.png" alt="Travel">
+                    <div class="lifestyle-content">
+                        <h3>✈️ World Explorer</h3>
+                        <p>Traveling opens my mind to diverse perspectives, cultures, and innovative solutions from around the globe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Damon | Lingnan University | A.T. Matrix studio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
